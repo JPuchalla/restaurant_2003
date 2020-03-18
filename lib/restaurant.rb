@@ -31,4 +31,8 @@ class Restaurant
     dish_names
 
   end
+
+  def announce_closing_time
+    
+  end
 end

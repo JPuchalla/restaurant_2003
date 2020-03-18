@@ -57,6 +57,16 @@ end
   end
 
   def test_if_restraunt_is_open_for_lunch
+    assert_equal true, @restaurant1.open_for_lunch?
+    assert_equal false, @restaurant2.open_for_lunch?
+  end
+
+  def test_if_menu_dish_names_displays
+    @restaurant2.add_dish('Burrata')
+    @restaurant2.add_dish('Pizzetta')
+    @restaurant2.add_dish('Ravioli')
+
+    assert_equal ['BURRATA', 'PIZZETTA', 'RAVIOLI'], @restaurant2.menu_dish_names
 
   end
 
